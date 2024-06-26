@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>My-Website</title>
+</head>
+<body>
+  <div class="container"> 
+    <h1>Temperature Conversion</h1>
+    <input type="number" name="inputConversion" id="inputConversion" placeholder="Enter temperature">
+    
+    <div class="radio-group">
+      <label for="cardCelsius">
+        <input type="radio" name="unit" id="cardCelsius">
+        Celsius -> Fahrenheit
+      </label>
+
+      <label for="cardFahrenheit">
+        <input type="radio" name="unit" id="cardFahrenheit">
+        Fahrenheit -> Celsius
+      </label>
+    </div>
+
+    <button type="submit" id="submit">Submit</button>
+
+    <p id="display"></p>
+  </div>
+ 
+</body>
+</html>

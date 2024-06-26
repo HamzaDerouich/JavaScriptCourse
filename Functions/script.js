@@ -1,11 +1,14 @@
+// Declaracion de constantes 
 const calcular = document.getElementById("calc");
+
+// Asignacion evento al boton calcular 
 
 calcular.onclick = function() {
   let numberOne = document.getElementById("numberOne").value;
   let numberTwo = document.getElementById("numberTwo").value;
   let operation = document.getElementById("operations").value;
 
-  let valido = validarNumeros(numberOne, numberTwo);
+  let valido = validarNumeros(numberOne, numberTwo); // Metodo que valida los números
   if (!valido) {
     window.alert("Números no válidos, vuelva a digitarlos!!");
   } else {
@@ -15,6 +18,8 @@ calcular.onclick = function() {
   }
 };
 
+// Metodo que valida los núemeros
+
 function validarNumeros(numberOne, numberTwo) {
   let numeroValido = true;
   if (isNaN(numberOne) || isNaN(numberTwo) || numberOne === "" || numberTwo === "") {
@@ -22,6 +27,10 @@ function validarNumeros(numberOne, numberTwo) {
   }
   return numeroValido;
 }
+
+// Metodo que realiza las sumas , restas que recibe como parametros 
+// la operacion , numeroUno , numeroDos
+// y los muestra por pantalla 
 
 function realizarOperaciones(operation, numberOne, numberTwo) {
   let result;
