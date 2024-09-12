@@ -54,3 +54,4 @@ function realizarOperaciones(operation, numberOne, numberTwo) {
   let display = document.getElementById("display");
   display.textContent = result;
 }
+

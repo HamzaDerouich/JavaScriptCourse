@@ -18,6 +18,7 @@ console.log(letters);
 
 // copy one array in other array with spreads operators 
 
+let fruits = [ "apple", "coconut", "orange" ];
 let newFruits = [...fruits];
 console.log(newFruits);
 
